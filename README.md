@@ -163,8 +163,8 @@ Challenge: Configuring Firebase for hosting and deploying the app was initially 
 Solution: I ensured sensitive information like the API key was managed using environment variables and .env files. Additionally,
 I followed Firebase's hosting guidelines and ensured smooth deployment by testing configurations locally before deploying.
 
-Live Project (Firebase-hosted): [Your Firebase project URL]
-GitHub Repository: [Your GitHub repo URL]
+Live Project (Firebase-hosted): [https://news-feed-e8705.web.app/]
+GitHub Repository: [https://github.com/Karthi3003/-Acowale-Project]
 
 
 
