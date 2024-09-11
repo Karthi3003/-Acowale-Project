@@ -1,4 +1,4 @@
-# -Acowale-Project
+# Acowale-Project
 
 Project Title : News-feed-app
 
@@ -39,6 +39,7 @@ const firebaseConfig = {
 };
 
 4.Running the app locally:
+
 To run the React app locally:
 
 npm start
@@ -46,40 +47,33 @@ npm start
 
 Here’s a detailed section for your project setup instructions:
 
-Project Setup Instructions
+Project Setup Instructions:
+
 To set up and run this project locally, follow the steps below:
 
 Prerequisites:
 Node.js installed (v14.x or higher)
 Firebase CLI installed (npm install -g firebase-tools)
-1. Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-2. Install dependencies:
+
+1. Install dependencies:
 If you're using npm:
 
-bash
-Copy code
-npm install
-Or with yarn:
 
-bash
-Copy code
-yarn install
-3. GNews API Setup:
+npm install
+
+2. GNews API Setup:
 Go to GNews API and create an account to get your API key.
 Create a .env file in the root directory and add your GNews API key:
-bash
-Copy code
+
 REACT_APP_GNEWS_API_KEY=your-gnews-api-key
-4. Firebase Setup:
+
+3. Firebase Setup:
 Create a Firebase project at https://firebase.google.com.
 In your Firebase console, enable Firebase Hosting.
 Set up your Firebase config in the project. Replace the dummy config in firebaseConfig.js with your Firebase credentials:
+
 javascript
-Copy code
+
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
   authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
@@ -88,31 +82,35 @@ const firebaseConfig = {
   messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
   appId: "YOUR_APP_ID"
 };
-5. Running the app locally:
+
+4. Running the app locally:
 To run the React app locally:
 
 npm start
 
 This will start the app on http://localhost:3000.
 
-6.Deploying to Firebase:
+5.Deploying to Firebase:
+
 To deploy the app on Firebase:
 
-7.Login to Firebase from the terminal:
+6.Login to Firebase from the terminal:
 
-  firebase login
+firebase login
 
-8.Initialize Firebase in your project:
+7.Initialize Firebase in your project:
 
 firebase init
 
-9. Firebase Hosting, and select the project you created in the Firebase console.
+8. Firebase Hosting, and select the project you created in the Firebase console.
 
-10. 10.Finally, deploy the app:
+9. Finally, deploy the app:
 
 firebase deploy
 
 After deployment, you can access your app using the Firebase Hosting URL provided after deployment.
+
+Live Project (Firebase-hosted): [https://news-feed-e8705.web.app/]
 
 
 
@@ -139,7 +137,8 @@ Firebase’s CLI was used to deploy the app seamlessly, making it publicly acces
 This structured approach ensures the app is maintainable, scalable, and performs efficiently across devices.
 
 
-Challenges Faced & Solutions
+Challenges Faced & Solutions:
+
 1. API Rate Limiting
    
 Challenge: The GNews API has a rate limit, which restricts the number of requests that can be made within a given time.
@@ -159,6 +158,7 @@ I added loading indicators and proper error handling, allowing the app to gracef
 
 
 3. Firebase Deployment
+
 Challenge: Configuring Firebase for hosting and deploying the app was initially tricky, especially when managing environment-specific configurations like API keys.
 Solution: I ensured sensitive information like the API key was managed using environment variables and .env files. Additionally,
 I followed Firebase's hosting guidelines and ensured smooth deployment by testing configurations locally before deploying.
